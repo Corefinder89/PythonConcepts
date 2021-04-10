@@ -68,3 +68,6 @@ finally:
 # 8. To get the built-ins exceptions within python using the built in function
 # local() - print(dir(locals()['__builtins__'])). locals()['__builtins__'] will
 # return a module of built-in exceptions, functions and attributes
+
+# Types of exceptions
+# https://www.programiz.com/python-programming/exceptions
