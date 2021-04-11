@@ -64,7 +64,7 @@ finally:
 # 6. finally enables you to execute sections of code that should always run,
 # with or without any previously encountered exceptions.
 # 7. In Python, all exceptions must be instances of a class that derives from
-# BaseException.
+# BaseException class.
 # 8. To get the built-ins exceptions within python using the built in function
 # local() - print(dir(locals()['__builtins__'])). locals()['__builtins__'] will
 # return a module of built-in exceptions, functions and attributes
