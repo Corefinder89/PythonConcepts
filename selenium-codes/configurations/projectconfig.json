@@ -2,6 +2,12 @@
   "browser_config": {
     "driver_path_macos": "drivers/macos/chromedriver",
     "driver_path_linux": "drivers/linux/chromedriver",
-    "headless_status": false
+    "headless_status": true
+  },
+  "slack_config":{
+
+  },
+  "email_config":{
+    "recipients":[]
   }
 }

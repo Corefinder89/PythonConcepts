@@ -8,7 +8,8 @@ class Testgoogle(Driverutility):
         headless_status = super().parse_config("project_config", "browser_config", "headless_status")
         driver = super().spawn_driver("chrome", headless_status)
         driver.get("https://www.google.co.in/")
-        assert driver.title == "Google", "Title does not match"
+        print(driver.title)
+        assert driver.title == "Googl", "Title does not match"
 
         super().tear_down(driver)
 
@@ -17,6 +18,7 @@ class Testgoogle(Driverutility):
         headless_status = super().parse_config("project_config", "browser_config", "headless_status")
         driver = super().spawn_driver("safari", headless_status)
         driver.get("https://www.google.co.in/")
+        print(driver.title)
         assert driver.title == "Google", "Title does not match"
 
         super().tear_down(driver)

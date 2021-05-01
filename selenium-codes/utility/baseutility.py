@@ -5,7 +5,7 @@ import logging
 class Baseutility:
     # log information
     def log_info(self, informationmessage):
-            logging.info(informationmessage)
+        logging.info(informationmessage)
 
     # log error
     def log_error(self, errormessage):
@@ -36,6 +36,7 @@ class Baseutility:
             config_path = "configurations/"
             if config_type == "project_config":
                 json_config_path = config_path + "projectconfig.json"
+                #configurations/projectconfig.json
                 with open(json_config_path, "r") as jsonobj:
                     jsondata = json.load(jsonobj)
                     json_obj = jsondata.get(p_datatype).get(c_datatype)
