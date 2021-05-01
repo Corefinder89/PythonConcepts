@@ -4,9 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-selenium = "*"
-pre-commit = "*"
-pytest-html = "*"
+pytest = "*"
 
 [dev-packages]
 

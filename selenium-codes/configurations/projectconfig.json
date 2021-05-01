@@ -1,0 +1,7 @@
+{
+  "browser_config": {
+    "driver_path_macos": "drivers/macos/chromedriver",
+    "driver_path_linux": "drivers/linux/chromedriver",
+    "headless_status": false
+  }
+}
