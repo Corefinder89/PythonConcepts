@@ -1,7 +1,9 @@
 from utility.driverutility import Driverutility
+import pytest
 
 
 class Testgoogle(Driverutility):
+    @pytest.mark.execute
     def test_chrome(self):
         headless_status = super().parse_config("project_config", "browser_config", "headless_status")
         driver = super().spawn_driver("chrome", headless_status)
@@ -10,6 +12,7 @@ class Testgoogle(Driverutility):
 
         super().tear_down(driver)
 
+    @pytest.mark.execute
     def test_safari(self):
         headless_status = super().parse_config("project_config", "browser_config", "headless_status")
         driver = super().spawn_driver("safari", headless_status)
@@ -18,8 +21,9 @@ class Testgoogle(Driverutility):
 
         super().tear_down(driver)
 
+    @pytest.mark.debug
     def test_chrome_headless(self):
-        headless_status = True
+        headless_status = super().parse_config("project_config", "browser_config", "headless_status")
         driver = super().spawn_driver("chrome", headless_status)
         driver.get("https://www.google.co.in/")
         assert driver.title == "Google", "Title does not match"
