@@ -16,4 +16,26 @@ else
     echo "directory logs created"
 fi
 
-pytest test -s -v -m execute --html=html_reports/reports.html --log-file logs/"$(date '+%F_%H:%M:%S')".log
+# Validate that if an argument is passed or not
+echo "The total number of arguments are $#"
+if [ $# -eq 0 ]; then echo "No option is passed as argument"; fi
+
+# Parse command line argument to run tests accordingly
+for i in "$@"; do
+    case $i in
+        --regression) pytest test -s -v -m regression --html=html_reports/reports.html --log-file logs/"$(date '+%F_%H:%M:%S')".log
+            break
+            ;;
+        --smoke) pytest test -s -v -m smoke --html=html_reports/reports.html --log-file logs/"$(date '+%F_%H:%M:%S')".log
+            break
+            ;;
+        --sanity) pytest test -s -v -m sanity --html=html_reports/reports.html --log-file logs/"$(date '+%F_%H:%M:%S')".log
+            break
+            ;;
+        --apitest) pytest app/test -m apitest
+            break
+            ;;
+        *) echo "Option not available"
+            ;;
+    esac
+done

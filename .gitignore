@@ -3,3 +3,5 @@ python-basics/testdirectory
 selenium-codes/.idea/
 selenium-codes/html_reports/
 selenium-codes/logs/
+selenium-codes/test/__pycache__/
+selenium-codes/utility/__pycache__/
