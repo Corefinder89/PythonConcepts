@@ -16,10 +16,7 @@ jobs:
         with:
           python-version: '3.x'
           architecture: 'x64'
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-            fetch-depth: 0
+      - uses: actions/checkout@v2
       - name: Setup and run tests
         working-directory: selenium-codes/
       - name: Install packages
