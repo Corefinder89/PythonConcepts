@@ -30,3 +30,12 @@ class Testgoogle(Driverutility):
         assert driver.title == "Google", "Title does not match"
 
         super().tear_down(driver)
+
+    @pytest.mark.regression
+    def test_facebook_title(self):
+        headless_status = super().parse_config("project_config", "browser_config", "headless_status")
+        driver = super().spawn_driver("chrome", headless_status)
+        driver.get("https://www.facebook.com/")
+        assert driver.title == "Facebook – log in or sign up", "Title does not match"
+
+        super().tear_down(driver)
