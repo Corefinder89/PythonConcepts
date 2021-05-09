@@ -14,9 +14,10 @@ jobs:
       run:
         working-directory: selenium-codes
     steps:
-      run: pwd
-#      - name: Checkout code
-#        uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run pwd
+        uses: pwd
 #      - name: Set up python version
 #        uses: actions/setup-python@v2
 #        with:
