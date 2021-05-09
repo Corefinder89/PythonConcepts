@@ -1,7 +1,7 @@
 {
   "browser_config": {
-    "driver_path_macos": "selenium-codes/drivers/macos/chromedriver",
-    "driver_path_linux": "selenium-codes/drivers/linux/chromedriver",
+    "driver_path_macos": "drivers/macos/chromedriver",
+    "driver_path_linux": "drivers/linux/chromedriver",
     "headless_status": true
   },
   "slack_config":{
