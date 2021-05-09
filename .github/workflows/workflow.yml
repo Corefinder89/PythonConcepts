@@ -11,14 +11,14 @@ jobs:
     name: Run selenium code
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - name: Setup automation platform
+        working-directory: selenium-codes
       - name: Set up python version
         uses: actions/setup-python@v2
         with:
           python-version: '3.x'
           architecture: 'x64'
-      - uses: actions/checkout@v2
-      - name: Setup and run tests
-        working-directory: selenium-codes/
       - name: Install packages
         run: pip install -r requirements.txt
       - name: Give execution permission to trigger
