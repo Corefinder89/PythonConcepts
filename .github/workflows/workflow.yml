@@ -21,11 +21,13 @@ jobs:
         with:
           python-version: '3.x'
           architecture: 'x64'
-      - name: Install packages
-        run: pip install -r requirements.txt
-      - name: Give execution permission to trigger
-        run: chmod +x execute.sh
-      - name: Execute trigger
-        run: ./execute.sh --regression
-        env:
-          DEFAULT_BRANCH: master
+      - name: List directories
+        run: ls -l
+#      - name: Install packages
+#        run: pip install -r requirements.txt
+#      - name: Give execution permission to trigger
+#        run: chmod +x execute.sh
+#      - name: Execute trigger
+#        run: ./execute.sh --regression
+#        env:
+#          DEFAULT_BRANCH: master
