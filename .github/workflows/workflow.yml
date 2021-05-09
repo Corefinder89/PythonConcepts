@@ -10,10 +10,12 @@ jobs:
   build:
     name: Run selenium code
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Setup automation platform
+    defaults:
+      run:
         working-directory: selenium-codes
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: Set up python version
         uses: actions/setup-python@v2
         with:
