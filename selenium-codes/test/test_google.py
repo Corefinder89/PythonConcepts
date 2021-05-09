@@ -9,7 +9,7 @@ class Testgoogle(Driverutility):
         driver = super().spawn_driver("chrome", headless_status)
         driver.get("https://www.google.co.in/")
         print(driver.title)
-        assert driver.title == "Googl", "Title does not match"
+        assert driver.title == "Google", "Title does not match"
 
         super().tear_down(driver)
 
