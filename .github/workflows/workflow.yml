@@ -20,6 +20,8 @@ jobs:
         with:
           python-version: '3.x'
           architecture: 'x64'
+      - name: Goto selenium code
+        run: cd selenium-codes/
       - name: Install packages
         run: pip install -r requirements.txt
       - name: Give execution permission to trigger
