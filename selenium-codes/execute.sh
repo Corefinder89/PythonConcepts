@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eu
+
 # Check if html_reports directory is present
 if [ -d "html_reports" ]; then
     echo "directory html_reports already present in path"
@@ -39,3 +41,7 @@ for i in "$@"; do
             ;;
     esac
 done
+
+test_exit_status=$?
+
+exit $test_exit_status
