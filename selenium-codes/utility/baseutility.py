@@ -30,16 +30,24 @@ class Baseutility:
         self.log_info("setting window size to " + str(window_width) + "x" + str(window_height))
         driver.set_window_size(window_height, window_width)
 
+    # picks up the configuration from the configuration files
     def parse_config(self, config_type, p_datatype, c_datatype):
         try:
             json_obj = ""
             config_path = "configurations/"
             if config_type == "project_config":
                 json_config_path = config_path + "projectconfig.json"
-                #configurations/projectconfig.json
+                # configurations/projectconfig.json
                 with open(json_config_path, "r") as jsonobj:
                     jsondata = json.load(jsonobj)
                     json_obj = jsondata.get(p_datatype).get(c_datatype)
+            if config_type == "web_config":
+                json_config_path = config_path + "webconfig.json"
+                # configurations/webconfig.json
+                with open(json_config_path, "r") as jsonobj:
+                    jsondata = json.load(jsonobj)
+                    json_obj = jsondata.get(p_datatype).get(c_datatype)
+
             return json_obj
         except KeyError as e:
             self.log_error(e)

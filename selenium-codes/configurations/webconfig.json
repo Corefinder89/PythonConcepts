@@ -1,0 +1,9 @@
+{
+  "links": {
+    "who-we-serve": "//li[normalize-space()='Who we serve']",
+    "products": "//li[normalize-space()='Products']",
+    "resources": "//li[normalize-space()='Resources']",
+    "about": "//li[normalize-space()='About']",
+    "support": "//a[normalize-space()='Support']"
+  }
+}
