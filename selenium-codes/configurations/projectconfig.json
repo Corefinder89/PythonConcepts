@@ -2,12 +2,10 @@
   "browser_config": {
     "driver_path_macos": "drivers/macos/chromedriver",
     "driver_path_linux": "drivers/linux/chromedriver",
-    "headless_status": true
+    "headless_status": false
   },
-  "slack_config":{
-
-  },
-  "email_config":{
-    "recipients":[]
+  "site": {
+    "site_data1": "http://automationpractice.com/index.php",
+    "site_data2": "https://synup.com/"
   }
 }
