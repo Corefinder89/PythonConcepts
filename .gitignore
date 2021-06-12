@@ -6,3 +6,5 @@ selenium-codes/logs/
 selenium-codes/test/__pycache__/
 selenium-codes/utility/__pycache__/
 .idea/
+*.pyc
+selenium-codes/pages/*.pyc
