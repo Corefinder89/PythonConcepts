@@ -2,6 +2,6 @@
 
 This repository contains basic and advance concepts of python. The aim of this repository is to create a repository of knowledge base for python. Any additions / contributions to this repo is welcome.
 
-## Topics
+## Concepts
 
-- [Dictionary](python-basics/dictionary.md)
+- [Dictionary](concepts/dictionary.md)
