@@ -1,4 +1,4 @@
-name: Markdown linting
+name: code standards
 
 on:
   push:
@@ -8,17 +8,23 @@ on:
 
 jobs:
   build:
-    name: Markdown linting
+    name: Lint Code Base
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
             fetch-depth: 0
-      - name: Lint Code Base
-        uses: docker://avtodev/markdown-lint:v1
+      - name: Set up python version
+        uses: actions/setup-python@v4
         with:
-          args: "**/*.md"
+          python-version: '3.x'
+          architecture: 'x64'
+      - name: Install pre-commit
+        run: pip install pre-commit
+      - name: Run pre-commit on all the files
+        run: pre-commit run --all-files
         env:
           VALIDATE_ALL_CODEBASE: true
           DEFAULT_BRANCH: master
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
