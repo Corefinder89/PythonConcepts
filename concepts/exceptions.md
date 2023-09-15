@@ -1,4 +1,4 @@
-# Exceptions vs syntax errors
+# Exceptions vs syntax errors in python
 
 Syntax errors occur when the parser detects an incorrect statement. Exception occurs when a syntactically correct
 code results in an error
