@@ -5,3 +5,4 @@ This repository contains basic and advance concepts of python. The aim of this r
 ## Concepts
 
 - [Dictionary](concepts/dictionary.md)
+- [Exceptions](concepts/exceptions.md)
