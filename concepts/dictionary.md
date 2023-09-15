@@ -8,8 +8,8 @@ Dictionary is another composite data type provided by python which is similar to
 - Both are dynamic. They can grow and shrink as needed.
 - Both can be nested. A list can contain another list. A dictionary can contain another dictionary. A dictionary can also contain a list, and vice versa.
 - Dictionaries differ from lists primarily in how elements are accessed:
-     - List elements are accessed by their position in the list, via indexing. 
-     - Dictionary elements are accessed via keys.
+  - List elements are accessed by their position in the list, via indexing.
+  - Dictionary elements are accessed via keys.
 
 ## Defining a dictionary
 Dictionaries are Python’s implementation of a data structure that is more generally known as an associative array (
@@ -18,7 +18,8 @@ Associative arrays, also called maps or dictionaries, are an abstract data type 
 
 You can define a dictionary by enclosing a comma-separated list of key-value pairs in curly braces ({}).
 A colon (:) separates each key from its associated value:
-```text
+
+```
 d = {
      <key>: <value>,
      <key>: <value>,
