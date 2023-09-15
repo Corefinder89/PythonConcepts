@@ -8,3 +8,4 @@ selenium-codes/utility/__pycache__/
 .idea/
 *.pyc
 selenium-codes/pages/*.pyc
+Pipfile.lock
