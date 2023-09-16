@@ -279,3 +279,8 @@ physicists_1 = OrderedDict(newton="1642-1726/1727", hawking="1942-2018")
 physicists |= physicists_1
 print(physicists)
 ```
+
+## Practical examples
+
+- [Sorting an ordered dictionary](../concepts/sortingordereddictionary.md)
+- [Testing for equality between dictionaries](../concepts/dictionaryequality.md)
