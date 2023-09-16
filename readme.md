@@ -10,7 +10,6 @@ This repository contains basic and advance concepts of python. The aim of this r
 - [Dictionary in python](concepts/dictionary.md)
     - [Dictionary comprehension](concepts/dictionarycomprehension.md)
     - [Ordered dictionary](concepts/ordereddictionary.md)
-    - [Unordered dictionary](concepts/unordereddictionary.md)
 - [List in python]
 - [Tuples in python]
 - [String operations in python]
