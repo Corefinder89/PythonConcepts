@@ -280,6 +280,16 @@ physicists |= physicists_1
 print(physicists)
 ```
 
+## Considering performance
+
+Performance is an important subject in programming. Knowing how fast an algorithm runs or how much memory it uses are common concerns. OrderedDict was initially coded in Python and then written in C to maximize efficiency in its methods and operations. These two implementations are currently available in the standard library. However, the Python implementation serves as an alternative if the C implementation isn’t available for some reason.
+
+Both implementations of OrderedDict involve using a `doubly linked list` to capture the order of items. Despite having linear time for some operations, the linked list implementation in OrderedDict is highly optimized to preserve the fast times of the corresponding dictionary methods. That said, the operations on an ordered dictionary are `O(1)` but with a greater constant factor compared to regular dictionaries.
+
+Regarding memory consumption, OrderedDict instances have to pay a storage cost because of their ordered list of keys.
+
+In general, OrderedDict has lower performance than regular dictionaries.
+
 ## Practical examples
 
 - [Sorting an ordered dictionary](../concepts/sortingordereddictionary.md)
