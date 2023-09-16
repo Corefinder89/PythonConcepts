@@ -254,7 +254,7 @@ With last set to False, you can use .popitem() to remove and return items from t
 
 ## Merging and updating dictionaries with operators
 
-Python 3.9 added two new operators to the dictionary space. Now you have merge (|) and update (|=) dictionary operators. These operators also work with OrderedDict instances
+Python 3.9 added two new operators to the dictionary space. Now you have merge `(|)` and update `(|=)` dictionary operators. These operators also work with OrderedDict instances
 
 ```python
 from collections import OrderedDict
