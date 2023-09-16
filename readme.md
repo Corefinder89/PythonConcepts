@@ -7,6 +7,7 @@ This repository contains basic and advance concepts of python. The aim of this r
 - [Global vs Local variable](concepts/variabletypesinpython.md)
 - [Special variables in python]
 - [*args and **kwargs in python]
+- [Method resolution order]
 - [Dictionary in python](concepts/dictionary.md)
     - [Dictionary comprehension](concepts/dictionarycomprehension.md)
     - [Ordered dictionary](concepts/ordereddictionary.md)
@@ -18,7 +19,7 @@ This repository contains basic and advance concepts of python. The aim of this r
 - [Filters in python]
 - [Anonymous functions in pyhton]
 - [Exceptions vs errors in python](concepts/exceptions.md)
-    - [Hierarchy of exceptions](concepts/exceptionhierarchy.md)
+    - [Exception / error hierarchy in python](concepts/exceptionerrorhierarchy.md)
 - [Method overloading in python](concepts/methodoverloading.md)
 - [Context manager in python]
 - [Closure in python]
