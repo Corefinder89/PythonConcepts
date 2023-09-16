@@ -6,7 +6,8 @@ This repository contains basic and advance concepts of python. The aim of this r
 
 - [Global vs Local variable](concepts/variabletypesinpython.md)
 - [Special variables in python]
-- [*args and **kwargs in python]
+- [Demystifying args and kwargs in python](concepts/arguments.md)
+    - [Unpacking operator](concepts/unpackingoperator.py)
 - [Method resolution order]
 - [Dictionary in python](concepts/dictionary.md)
     - [Dictionary comprehension](concepts/dictionarycomprehension.md)
