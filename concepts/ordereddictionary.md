@@ -24,7 +24,7 @@ Core Python developers wanted to fill in the gap and provide a dictionary that c
 
 There’s at least one more reason to continue using OrderedDict in your code: **backward compatibility**. Relying on regular dict objects to preserve the order of items will break your code in environments that run versions of Python older than 3.6.
 
-## Creating OrderedDictobjects
+## Creating OrderedDict objects
 
 Being a dict subclass means that it inherits all the methods a regular dictionary provides. Unlike `dict`, `OrderedDict` isn’t a built-in type, so the first step to create OrderedDict objects is to import the class from collections. There are several ways to create ordered dictionaries. Most of them are identical to how you create a regular dict object. For example, you can create an empty OrderedDict object by instantiating the class without arguments:
 
