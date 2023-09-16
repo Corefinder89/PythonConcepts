@@ -42,3 +42,9 @@ def classtree(cls, indent=0):
         classtree(subcls, indent + 3)
 classtree(Exception)
 ```
+
+In this example, we only print the hierarchy of `Exception` class.
+
+## Codebase
+
+[Reference codebase](../codes/builtinexception.py)
