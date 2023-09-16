@@ -66,3 +66,7 @@ print(a)
 *a, = "RealPython"
 print(a)
 ```
+
+## Codebase
+
+[Reference codebase](../codes/arguments.py)
