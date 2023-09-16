@@ -284,3 +284,4 @@ print(physicists)
 
 - [Sorting an ordered dictionary](../concepts/sortingordereddictionary.md)
 - [Testing for equality between dictionaries](../concepts/dictionaryequality.md)
+- [Appending new attributes to a dictionary instance](../concepts/appenddictionaryattributes.md)
