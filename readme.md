@@ -16,9 +16,9 @@ The repository contains the advance and the basic concepts of python along with 
 
 - [Object-oriented programming concepts in python](concpets/object-oriented-concepts.md)
 - [Namespaces and scope in python](concepts/namespacesandscopes.md)
+    - [Global vs Local variable](concepts/variabletypesinpython.md)
 - [Overloading in python](concepts/overloading.md)
     - [Method overloading in python](concepts/methodoverloading.md)
-- [Global vs Local variable](concepts/variabletypesinpython.md)
 - [Special variables in python]
 - [Demystifying args and kwargs in python](concepts/arguments.md)
     - [Unpacking operator](concepts/unpackingoperator.md)
