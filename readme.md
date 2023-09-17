@@ -12,8 +12,12 @@ The repository contains the advance and the basic concepts of python along with 
 - Once the checks are successful please raise a PR and get it reviewed before merging to master.
 - Please ensure your informations are correct and add a code reference to each and every topic.
 
-## Basic and advanced concepts
+## Index
 
+- [Object-oriented programming concepts in python](concpets/object-oriented-concepts.md)
+- [Namespaces and scope in python](concepts/namespacesandscopes.md)
+- [Overloading in python](concepts/overloading.md)
+    - [Method overloading in python](concepts/methodoverloading.md)
 - [Global vs Local variable](concepts/variabletypesinpython.md)
 - [Special variables in python]
 - [Demystifying args and kwargs in python](concepts/arguments.md)
@@ -22,6 +26,9 @@ The repository contains the advance and the basic concepts of python along with 
 - [Dictionary in python](concepts/dictionary.md)
     - [Dictionary comprehension](concepts/dictionarycomprehension.md)
     - [Ordered dictionary](concepts/ordereddictionary.md)
+- [Shallow vs deep copy in python](concepts/shallowdeepcopy.md)
+- [Python descriptors]
+- [Implementing an interface in python]
 - [List in python]
 - [Tuples in python]
 - [String operations in python]
@@ -31,7 +38,6 @@ The repository contains the advance and the basic concepts of python along with 
 - [Anonymous functions in pyhton]
 - [Exceptions vs errors in python](concepts/exceptions.md)
     - [Exception / error hierarchy in python](concepts/exceptionerrorhierarchy.md)
-- [Method overloading in python](concepts/methodoverloading.md)
 - [Context manager in python]
 - [Closure in python]
 - [Data class in python]
